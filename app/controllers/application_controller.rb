@@ -9,7 +9,4 @@ class ApplicationController < Sinatra::Base
   	erb :index
   end
 
-  get "../models/dogs.rb" do
-    @Dogs = Dogs
-  end
 end
