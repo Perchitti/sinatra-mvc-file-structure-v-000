@@ -2,17 +2,17 @@ class Dog < ApplicationController
 
 attr_accessor :name, :breed, :age
 
-  @@all = []
+  DOGS = []
 
   def initialization(breed, name, age)
     @breed = breed
     @name = name
     @age = age
-    @@all << self
+    DOGS << self
   end
 
   def self.all
-    @@all
+    DOGS
   end
 
 
