@@ -4,7 +4,7 @@ attr_accessor :name, :breed, :age
 
   @@all = []
 
-  def initialize(breed, name, age)
+  def initialize(name, breed, age)
     @breed = breed
     @name = name
     @age = age
