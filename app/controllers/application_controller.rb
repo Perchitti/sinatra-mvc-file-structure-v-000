@@ -8,4 +8,8 @@ class ApplicationController < Sinatra::Base
   get "/" do
   	erb :index
   end
+
+  get "../models/dogs.rb" do
+    @Dogs = Dogs
+  end
 end
